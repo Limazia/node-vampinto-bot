@@ -1,0 +1,22 @@
+{
+  "name": "vampinto",
+  "version": "1.0.0",
+  "description": "Bot do Vampeta",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Limazia/node-vampinto-bot"
+  },
+  "author": "Limazia",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "child_process": "^1.0.2",
+    "d3-timer": "^1.0.10",
+    "moment": "^2.24.0",
+    "twit": "^2.2.11"
+  }
+}
