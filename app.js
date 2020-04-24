@@ -12,19 +12,7 @@ const getTime = moment().format('LLL');
 
 var T = new Twit(require('./src/config.js'));
 
-const trackList = [
-  'Vampeta',
-  'vampeta',
-  '#Vampeta',
-  '#vampeta',
-  'Vampeta pelado',
-  'vampeta pelado',
-  '#Vampinto',
-  '#vampinto',
-  '@vampinto_'
-];
-
-const stream = T.stream('statuses/filter', { track: trackList });
+const stream = T.stream('statuses/filter', { track: "@vampinto_" });
 stream.on('tweet', tweetEvent);
 
 function tweetEvent(tweet) {
